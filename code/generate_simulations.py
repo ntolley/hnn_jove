@@ -92,7 +92,7 @@ def set_params_with_nmda(param_values, net):
 
     set_params(param_values, net)
 
-    # Inhibitory gain sweep
+    # NMDA Inhibitory gain sweep
     conn_indices = pick_connection(net, src_gids=['L2_pyramidal', 'L5_pyramidal'], receptor=['nmda'])
     for conn_idx in conn_indices:
         net.connectivity[conn_idx]['nc_dict']['A_weight'] *= 10 ** param_values['nmda_gain_scale']
