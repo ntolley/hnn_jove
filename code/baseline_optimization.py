@@ -253,11 +253,10 @@ if __name__ == "__main__":
 
     n_trials = 10
     scaling_factor = 1000
-    # scaling_factor = 2000 # use for dt=0.5
     window_length = 40
     tstop = 250
-    dt = 0.5
-    max_iter = 5
+    dt = 0.025
+    max_iter = 100
 
     net = jones_2009_model()
     optim = Optimizer(net, tstop=tstop, constraints=constraints, solver='bayesian',
@@ -288,18 +287,20 @@ if __name__ == "__main__":
     for dipole in dipoles_optimized:
         dipole.smooth(window_length).scale(scaling_factor)
 
+    # Make figures
     labelsize = 13
     ticksize = 10
 
+    # Loss figure
     plt.figure(figsize=(6,4.5))
     plt.plot(optim.obj_, color='k')
     plt.xlabel('Epochs', fontsize=labelsize)
     plt.ylabel('Loss', fontsize=labelsize)
     plt.xticks(fontsize=ticksize)
     plt.xticks(fontsize=ticksize)
-    plt.savefig(f'/users/ntolley/Jones_Lab/hnn_jove/figures/opt_baseline_loss_{job_id}.png')
+    plt.savefig(f'/users/ntolley/Jones_Lab/hnn_jove/figures/baseline_optimization/opt_baseline_loss_{job_id}.png')
 
-
+    # Dipole figure
     fig, ax = plt.subplots(sharex=True, figsize=(6,4))
     plot_dipole(dipoles_optimized.copy(), ax=ax, layer='agg',
                 show=False, color='tab:blue', average=True)
@@ -310,6 +311,7 @@ if __name__ == "__main__":
                     Line2D([0], [0], color='tab:orange', lw=1.0),
                     Line2D([0], [0], color='tab:green', lw=1.0)]
     ax.legend(legend_handles, ['optimized', 'baseline'])
+    plt.title(f'Best loss: {optim.obj_[-1]:.2f}')
 
-    plt.savefig(f'/users/ntolley/Jones_Lab/hnn_jove/figures/opt_baseline_dipole_{job_id}.png')
+    plt.savefig(f'/users/ntolley/Jones_Lab/hnn_jove/figures/baseline_optimization/opt_baseline_dipole_{job_id}.png')
 
