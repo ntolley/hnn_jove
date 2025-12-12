@@ -2,11 +2,11 @@
 #SBATCH -J extrinsic_permutations
 #SBATCH -N 1
 #SBATCH -n 16
-#SBATCH -t 3:00:00
+#SBATCH -t 20:00:00
 #SBATCH --mem=200G
 #SBATCH --account carney-sjones-condo
 #SBATCH -p batch
-#SBATCH --array=0-9
+#SBATCH --array=0-19
 
 # Specify an output file
 #SBATCH -o /users/ntolley/Jones_Lab/hnn_jove/data/baseline_optimization/job_out/extrinsic_permutations-%j.out
