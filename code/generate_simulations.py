@@ -75,7 +75,7 @@ if __name__ == "__main__":
 
     # Initialize the network model and run the batch simulation.
     # net_base = jones_2009_model()
-    net_base = read_network_configuration('../data/baseline_optimization/opt_baseline_config_correlation_6.json')
+    net_base = read_network_configuration('../data/opt_baseline_config_correlation_best.json')
 
     # Class to handle running and saving large trainng batches
     batch_simulation = BatchSimulate(net=net_base,
