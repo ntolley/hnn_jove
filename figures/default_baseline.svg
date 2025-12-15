@@ -30,9 +30,9 @@
        apply_with_weight="true"
        only_selected="false"
        uniform="false" /><rect
-       x="33.851614"
-       y="504.01292"
-       width="63.001616"
+       x="33.851616"
+       y="504.01291"
+       width="63.001617"
        height="44.195164"
        id="rect17" /><inkscape:path-effect
        effect="bspline"
@@ -24947,7 +24947,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70030745"
-     inkscape:cx="604.02042"
+     inkscape:cx="605.44836"
      inkscape:cy="506.20624"
      inkscape:document-units="mm"
      inkscape:current-layer="g1"
@@ -25972,7 +25972,7 @@
          style="fill:#1976d2;fill-opacity:1;fill-rule:nonzero;stroke:none"
          transform="scale(1.3333333)" /><text
          xml:space="preserve"
-         style="font-size:26.6667px;line-height:1.2;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#2e80b9;stroke-width:0.283465;stroke-linejoin:bevel;fill-opacity:1"
+         style="font-size:26.6667px;line-height:1.2;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#2e80b9;fill-opacity:1;stroke-width:0.283465;stroke-linejoin:bevel"
          x="726.2027"
          y="515.00964"
          id="text2"><tspan
@@ -26017,7 +26017,7 @@
            y="672.25372"
            style="font-weight:bold;fill:#2e80b9;fill-opacity:1">N1</tspan></text><text
          xml:space="preserve"
-         style="font-size:26.6667px;line-height:1.2;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#e57f23;stroke-width:0.283465;stroke-linecap:butt;stroke-linejoin:bevel;fill-opacity:1"
+         style="font-size:26.6667px;line-height:1.2;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#e57f23;fill-opacity:1;stroke-width:0.283465;stroke-linecap:butt;stroke-linejoin:bevel"
          x="797.24811"
          y="504.27509"
          id="text2-1"><tspan

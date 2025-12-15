@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="1008pt"
-   height="288pt"
-   viewBox="0 0 1008 288"
+   width="860.35773pt"
+   height="257.60379pt"
+   viewBox="0 0 860.35773 257.60379"
    version="1.1"
    id="svg1046"
    sodipodi:docname="baseline_optimization_sequence.svg"
@@ -26,8 +26,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      inkscape:zoom="1.2657721"
-     inkscape:cx="562.89753"
-     inkscape:cy="178.15213"
+     inkscape:cx="575.14303"
+     inkscape:cy="144.18077"
      inkscape:window-width="1920"
      inkscape:window-height="1012"
      inkscape:window-x="0"
@@ -58,7 +58,7 @@
   </defs>
   <g
      id="figure_1"
-     transform="matrix(0.85241815,0,0,0.85241815,66.791331,37.299055)">
+     transform="matrix(0.85241815,0,0,0.85241815,1.1202064,12.107353)">
     <g
        id="patch_1">
       <path
@@ -8428,34 +8428,34 @@
       <rect
          x="49.128365"
          y="6.799459"
-         width="190.327645"
+         width="190.32765"
          height="53.576641"
          id="rect1039" />
     </clipPath>
     <clipPath
        id="p46a0cf4a3a">
       <rect
-         x="301.128365"
+         x="301.12836"
          y="6.799459"
-         width="190.327645"
+         width="190.32765"
          height="53.576641"
          id="rect1040" />
     </clipPath>
     <clipPath
        id="pd667d618b1">
       <rect
-         x="553.128365"
+         x="553.12836"
          y="6.799459"
-         width="190.327645"
+         width="190.32765"
          height="53.576641"
          id="rect1041" />
     </clipPath>
     <clipPath
        id="p680a3bd7c5">
       <rect
-         x="805.128365"
+         x="805.12836"
          y="6.799459"
-         width="190.327645"
+         width="190.32765"
          height="53.576641"
          id="rect1042" />
     </clipPath>
@@ -8463,81 +8463,81 @@
        id="p02f06f4a2c">
       <rect
          x="49.128365"
-         y="76.054705"
-         width="190.327645"
-         height="178.588805"
+         y="76.054703"
+         width="190.32765"
+         height="178.58881"
          id="rect1043" />
     </clipPath>
     <clipPath
        id="p2ab9e590db">
       <rect
-         x="301.128365"
-         y="76.054705"
-         width="190.327645"
-         height="178.588805"
+         x="301.12836"
+         y="76.054703"
+         width="190.32765"
+         height="178.58881"
          id="rect1044" />
     </clipPath>
     <clipPath
        id="p85dfcba1e3">
       <rect
-         x="553.128365"
-         y="76.054705"
-         width="190.327645"
-         height="178.588805"
+         x="553.12836"
+         y="76.054703"
+         width="190.32765"
+         height="178.58881"
          id="rect1045" />
     </clipPath>
     <clipPath
        id="p1b5c6f2d7a">
       <rect
-         x="805.128365"
-         y="76.054705"
-         width="190.327645"
-         height="178.588805"
+         x="805.12836"
+         y="76.054703"
+         width="190.32765"
+         height="178.58881"
          id="rect1046" />
     </clipPath>
   </defs>
   <text
      xml:space="preserve"
      style="font-size:21.0367px;line-height:1.2;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:1.49079;stroke-linejoin:bevel"
-     x="72.360779"
-     y="40.779896"
+     x="6.6896544"
+     y="15.588194"
      id="text1046"><tspan
        sodipodi:role="line"
        id="tspan1046"
        style="stroke:none;stroke-width:1.49079"
-       x="72.360779"
-       y="40.779896">A</tspan></text>
+       x="6.6896544"
+       y="15.588194">A</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:21.0368px;line-height:1.2;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:1.4908;stroke-linecap:butt;stroke-linejoin:bevel"
-     x="288.0058"
-     y="40.780052"
+     x="222.33467"
+     y="15.58835"
      id="text1046-6"><tspan
        sodipodi:role="line"
        id="tspan1046-7"
        style="stroke:none;stroke-width:1.4908"
-       x="288.0058"
-       y="40.780052">B</tspan></text>
+       x="222.33467"
+       y="15.58835">B</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:21.0367px;line-height:1.2;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:1.49079;stroke-linecap:butt;stroke-linejoin:bevel"
-     x="501.10858"
-     y="40.779896"
+     x="435.43747"
+     y="15.588194"
      id="text1046-6-3"><tspan
        sodipodi:role="line"
        id="tspan1046-7-5"
        style="stroke:none;stroke-width:1.49079"
-       x="501.10858"
-       y="40.779896">C</tspan></text>
+       x="435.43747"
+       y="15.588194">C</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:21.0367px;line-height:1.2;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:1.49079;stroke-linecap:butt;stroke-linejoin:bevel"
-     x="715.82617"
-     y="40.779896"
+     x="650.15503"
+     y="15.588194"
      id="text1046-6-2"><tspan
        sodipodi:role="line"
        id="tspan1046-7-9"
        style="stroke:none;stroke-width:1.49079"
-       x="715.82617"
-       y="40.779896">D</tspan></text>
+       x="650.15503"
+       y="15.588194">D</tspan></text>
 </svg>
