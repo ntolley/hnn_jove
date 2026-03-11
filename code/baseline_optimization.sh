@@ -1,20 +1,18 @@
 #!/bin/bash
 #SBATCH -J extrinsic_permutations
 #SBATCH -N 1
-#SBATCH -n 16
-#SBATCH -t 20:00:00
+#SBATCH -n 20
+#SBATCH -t 50:00:00
 #SBATCH --mem=200G
 #SBATCH --account carney-sjones-condo
 #SBATCH -p batch
-#SBATCH --array=0-19
+#SBATCH --array=0-10
 
 # Specify an output file
 #SBATCH -o /users/ntolley/Jones_Lab/hnn_jove/data/baseline_optimization/job_out/extrinsic_permutations-%j.out
 #SBATCH -e /users/ntolley/Jones_Lab/hnn_jove/data/baseline_optimization/job_out/extrinsic_permutations-%j.out
 
-module load anaconda
 source ~/.bashrc
-conda activate jaxley2
 
 echo "Starting job $SLURM_ARRAY_TASK_ID on $HOSTNAME"
 python baseline_optimization.py $SLURM_ARRAY_TASK_ID
