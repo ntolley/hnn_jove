@@ -1,6 +1,7 @@
 # Uncovering putative neural mechanisms of neurotherapeutic impacts on EEG using the Human Neocortical Neurosolver
 
-This repository contains code and examples to reproduce Tolley et al., 2026 (link TBB).
+This repository contains code and examples to reproduce Tolley et al., 2026 (link TBD).
+<img width="924" height="318" alt="image" src="https://github.com/user-attachments/assets/31eedc41-ef48-4524-a21b-190b799b5d2b" />
 
 ### Motivation
 A key barrier to developing effective drugs for disorders of the central nervous system (CNS) is understanding their impact on neural circuits. This protocol demonstrates how physics-based neural simulations can be used to interpret electrophysiological biomarkers, providing a mechanistically grounded approach to the development of neurotherapeutics.
