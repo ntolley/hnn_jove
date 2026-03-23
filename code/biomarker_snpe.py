@@ -106,19 +106,19 @@ if __name__ == "__main__":
 
 
     # Simulation and inference hyperparameters
-    num_sims = 100
+    num_sims = 10_000
     n_jobs = 50
     tstop = 250
-    dt = 0.5
-    num_rounds = 3
+    dt = 0.025
+    num_rounds = 10
     n_components = 10
 
     # Load in target waveform and optimized parameter set
     dipole_experimental = read_dipole('/users/ntolley/Jones_Lab/hnn_jove/data/L_Contra.txt')
 
     round = 0
-    suffix = 'baseline'
-    save_path = f'/oscar/data/sjones/ntolley/hnn_jove/jones_2009_snpe/{args.target}'
+    # save_path = f'/oscar/data/sjones/ntolley/hnn_jove/jones_2009_snpe/{args.target}'
+    save_path = f'/oscar/scratch/ntolley/hnn_jove/jones_2009_snpe/{args.target}'
     data_save_path = f'{save_path}/round_{round}'
 
     figure_path = f'{save_path}/figures'
@@ -203,6 +203,7 @@ if __name__ == "__main__":
         target_color = 'C3'
 
     # Fit PCA to training simulations
+    print(f'\nRunning PCA')
     pca = PCA(n_components=n_components)
     x_train = pca.fit_transform(dpl_train)
     dpl_transform = pca.inverse_transform(x_train)
@@ -253,7 +254,7 @@ if __name__ == "__main__":
 
         plt.figure()
         _ = plt.plot(dpl_train[:100, :].T, color='k', linewidth=0.5, alpha=0.5)
-        _ = plt.plot(baseline_dpl, color=target_color, linewidth=3)
+        _ = plt.plot(target_dpl, color=target_color, linewidth=3)
         plt.xlabel('Samples')
         plt.savefig(f'{figure_path}/ppc_waveforms_round_{round}.png')
         plt.close()
