@@ -6,7 +6,7 @@
 #SBATCH --mem=200G
 #SBATCH --account carney-sjones-condo
 #SBATCH -p batch
-#SBATCH --array=0-10
+#SBATCH --array=11-20
 
 # Specify an output file
 #SBATCH -o /users/ntolley/Jones_Lab/hnn_jove/data/baseline_optimization/job_out/extrinsic_permutations-%j.out
