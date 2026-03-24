@@ -6557,22 +6557,22 @@
             "event_seed": 2,
             "conn_seed": 3,
             "dynamics": {
-                "mu": 77.95690780128565,
-                "sigma": 10.56804788879845,
+                "mu": 12.361721979682802,
+                "sigma": 14.403824770442338,
                 "numspikes": 1
             },
             "events": [],
             "weights_ampa": {
-                "L2_basket": 0.004134904738318736,
-                "L2_pyramidal": 1.0962136438821928e-05,
-                "L5_basket": 6.996577498137109,
-                "L5_pyramidal": 0.02732990887975224
+                "L2_basket": 0.01869945473325896,
+                "L2_pyramidal": 0.0005456647963426776,
+                "L5_basket": 0.0037057495463498655,
+                "L5_pyramidal": 0.2780867972050156
             },
             "weights_nmda": {
-                "L2_basket": 2.5445979520767823,
-                "L2_pyramidal": 0.0005988679945153184,
-                "L5_basket": 0.10281160546966694,
-                "L5_pyramidal": 0.002142079014800886
+                "L2_basket": 0.06660490684930748,
+                "L2_pyramidal": 2.4807759828552932e-05,
+                "L5_basket": 0.7276403114502467,
+                "L5_pyramidal": 4.817854533414505e-05
             },
             "synaptic_delays": {
                 "L2_basket": 0.1,
@@ -6597,22 +6597,22 @@
             "event_seed": 2,
             "conn_seed": 3,
             "dynamics": {
-                "mu": 37.15329598575019,
-                "sigma": 12.713252230290996,
+                "mu": 155.75177609308687,
+                "sigma": 19.85782517290632,
                 "numspikes": 1
             },
             "events": [],
             "weights_ampa": {
-                "L2_basket": 8.959249933795992e-05,
-                "L2_pyramidal": 0.0029747448891666163,
-                "L5_basket": 0.12669088287553207,
-                "L5_pyramidal": 1.131743189540869e-05
+                "L2_basket": 0.021077359080384484,
+                "L2_pyramidal": 5.105104095685212e-05,
+                "L5_basket": 5.9563843675630895e-05,
+                "L5_pyramidal": 0.00020142025157846152
             },
             "weights_nmda": {
-                "L2_basket": 0.0016711364124289343,
-                "L2_pyramidal": 0.008103575900372004,
-                "L5_basket": 7.144038195712331e-05,
-                "L5_pyramidal": 1.670672035052797e-05
+                "L2_basket": 0.0028356309570100814,
+                "L2_pyramidal": 0.16210365217056386,
+                "L5_basket": 4.036939926839028,
+                "L5_pyramidal": 0.00020179554468710778
             },
             "synaptic_delays": {
                 "L2_basket": 0.1,
@@ -6637,20 +6637,20 @@
             "event_seed": 2,
             "conn_seed": 3,
             "dynamics": {
-                "mu": 78.70119126473796,
-                "sigma": 6.11168738938173,
+                "mu": 78.9079644198124,
+                "sigma": 6.952447836462193,
                 "numspikes": 1
             },
             "events": [],
             "weights_ampa": {
-                "L2_basket": 0.025710587835467424,
-                "L2_pyramidal": 0.010042980374680053,
-                "L5_pyramidal": 3.116561029752166e-05
+                "L2_basket": 1.7159386293172092,
+                "L2_pyramidal": 5.381209916055832,
+                "L5_pyramidal": 0.3827641868087093
             },
             "weights_nmda": {
-                "L2_basket": 0.10879525999581828,
-                "L2_pyramidal": 0.8158667389961518,
-                "L5_pyramidal": 0.7863481377389245
+                "L2_basket": 0.13389452683253356,
+                "L2_pyramidal": 8.593841395533605,
+                "L5_pyramidal": 0.4011513330907383
             },
             "synaptic_delays": {
                 "L2_basket": 0.1,
@@ -101952,7 +101952,7 @@
             "receptor": "ampa",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 0.004134904738318736,
+                "A_weight": 0.01869945473325896,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -102150,7 +102150,7 @@
             "receptor": "nmda",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 2.5445979520767823,
+                "A_weight": 0.06660490684930748,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -102673,7 +102673,7 @@
             "receptor": "ampa",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 1.0962136438821928e-05,
+                "A_weight": 0.0005456647963426776,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -103196,7 +103196,7 @@
             "receptor": "nmda",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 0.0005988679945153184,
+                "A_weight": 2.4807759828552932e-05,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -103394,7 +103394,7 @@
             "receptor": "ampa",
             "nc_dict": {
                 "A_delay": 1.0,
-                "A_weight": 6.996577498137109,
+                "A_weight": 0.0037057495463498655,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -103592,7 +103592,7 @@
             "receptor": "nmda",
             "nc_dict": {
                 "A_delay": 1.0,
-                "A_weight": 0.10281160546966694,
+                "A_weight": 0.7276403114502467,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -104115,7 +104115,7 @@
             "receptor": "ampa",
             "nc_dict": {
                 "A_delay": 1.0,
-                "A_weight": 0.02732990887975224,
+                "A_weight": 0.2780867972050156,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -104638,7 +104638,7 @@
             "receptor": "nmda",
             "nc_dict": {
                 "A_delay": 1.0,
-                "A_weight": 0.002142079014800886,
+                "A_weight": 4.817854533414505e-05,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -104836,7 +104836,7 @@
             "receptor": "ampa",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 8.959249933795992e-05,
+                "A_weight": 0.021077359080384484,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -105034,7 +105034,7 @@
             "receptor": "nmda",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 0.0016711364124289343,
+                "A_weight": 0.0028356309570100814,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -105557,7 +105557,7 @@
             "receptor": "ampa",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 0.0029747448891666163,
+                "A_weight": 5.105104095685212e-05,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -106080,7 +106080,7 @@
             "receptor": "nmda",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 0.008103575900372004,
+                "A_weight": 0.16210365217056386,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -106278,7 +106278,7 @@
             "receptor": "ampa",
             "nc_dict": {
                 "A_delay": 1.0,
-                "A_weight": 0.12669088287553207,
+                "A_weight": 5.9563843675630895e-05,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -106476,7 +106476,7 @@
             "receptor": "nmda",
             "nc_dict": {
                 "A_delay": 1.0,
-                "A_weight": 7.144038195712331e-05,
+                "A_weight": 4.036939926839028,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -106999,7 +106999,7 @@
             "receptor": "ampa",
             "nc_dict": {
                 "A_delay": 1.0,
-                "A_weight": 1.131743189540869e-05,
+                "A_weight": 0.00020142025157846152,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -107522,7 +107522,7 @@
             "receptor": "nmda",
             "nc_dict": {
                 "A_delay": 1.0,
-                "A_weight": 1.670672035052797e-05,
+                "A_weight": 0.00020179554468710778,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -107720,7 +107720,7 @@
             "receptor": "ampa",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 0.025710587835467424,
+                "A_weight": 1.7159386293172092,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -107918,7 +107918,7 @@
             "receptor": "nmda",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 0.10879525999581828,
+                "A_weight": 0.13389452683253356,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -108441,7 +108441,7 @@
             "receptor": "ampa",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 0.010042980374680053,
+                "A_weight": 5.381209916055832,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -108964,7 +108964,7 @@
             "receptor": "nmda",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 0.8158667389961518,
+                "A_weight": 8.593841395533605,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -109487,7 +109487,7 @@
             "receptor": "ampa",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 3.116561029752166e-05,
+                "A_weight": 0.3827641868087093,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
@@ -110010,7 +110010,7 @@
             "receptor": "nmda",
             "nc_dict": {
                 "A_delay": 0.1,
-                "A_weight": 0.7863481377389245,
+                "A_weight": 0.4011513330907383,
                 "lamtha": 3.0,
                 "threshold": 0.0,
                 "gain": 1.0
