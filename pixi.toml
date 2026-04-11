@@ -1,0 +1,17 @@
+[workspace]
+authors = ["Nick Tolley <nic.m.tolley@gmail.com>"]
+channels = ["conda-forge"]
+name = "hnn_jove"
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+sbi = ">=0.25.0,<0.26"
+ipywidgets = ">=8.1.8,<9"
+seaborn = ">=0.13.2,<0.14"
+neurodsp = ">=2.3.0,<3"
+
+[pypi-dependencies]
+hnn-core = { git = "https://github.com/ntolley/hnn-core", rev = "bc1b975a01edf35d25621f282894335b84d70af9", extras=["dev"] }
