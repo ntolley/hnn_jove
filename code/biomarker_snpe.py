@@ -91,8 +91,16 @@ def get_sims(fpath):
             for param_dict in res['param_values']:
                 theta_train.append(np.array(list(param_dict.values())))
 
+            # Delete batch sim
+            os.remove(f'{fpath}/{fname}')
+
     dpl_list = np.array(dpl_list)
     theta_train = np.array(theta_train)
+
+    np.save(f'{fpath}/dpl.npy', dpl_list)
+    np.save(f'{fpath}/times.npy', dpl[0].times)
+    np.save(f'{fpath}/theta.npy', dpl_list)
+
     return dpl_list, theta_train
 
 
@@ -118,7 +126,7 @@ if __name__ == "__main__":
 
     round = 0
     # save_path = f'/oscar/data/sjones/ntolley/hnn_jove/jones_2009_snpe/{args.target}'
-    save_path = f'/oscar/scratch/ntolley/hnn_jove/jones_2009_snpe/{args.target}'
+    save_path = f'/oscar/scratch/ntolley/hnn_jove/jones_2009_snpe_wide/{args.target}'
     data_save_path = f'{save_path}/round_{round}'
 
     figure_path = f'{save_path}/figures'
@@ -127,7 +135,7 @@ if __name__ == "__main__":
     os.makedirs(posterior_path, exist_ok=True)
 
     net_base = jones_2009_model()
-    constraints_wide, initial_params = add_opt_drives(net_base, n_prox=2, n_dist=1)
+    constraints, initial_params = add_opt_drives(net_base, n_prox=2, n_dist=1)
 
     opt_fname = '../data/baseline_optimization/opt_baseline_object_correlation_10.pkl'
     with open(opt_fname, 'rb') as file:
@@ -135,13 +143,13 @@ if __name__ == "__main__":
 
     opt_params = opt_run.opt_params_
 
-    percent_change = 0.5
-    delta = np.abs(opt_params) * percent_change
-    lower_bounds = opt_params - delta
-    upper_bounds = opt_params + delta
+    # percent_change = 0.5
+    # delta = np.abs(opt_params) * percent_change
+    # lower_bounds = opt_params - delta
+    # upper_bounds = opt_params + delta
 
-    # Widen drive parameter bounds centered on optimized baseline
-    constraints = {name: (lower_bounds[idx], upper_bounds[idx]) for idx, name in enumerate(constraints_wide.keys())}
+    # # Widen drive parameter bounds centered on optimized baseline
+    # constraints = {name: (lower_bounds[idx], upper_bounds[idx]) for idx, name in enumerate(constraints_wide.keys())}
 
     # Add drug mechanism parameters
     min_val, max_val = -1, 1
@@ -178,7 +186,9 @@ if __name__ == "__main__":
 
     print ('Done!')
 
-    dpl_train, theta_train = get_sims(save_path)
+    dpl_train, theta_train = get_sims(data_save_path)
+
+    
 
     times = np.linspace(0, tstop, dpl_train.shape[1])
 
@@ -241,7 +251,7 @@ if __name__ == "__main__":
                                 backend='loky',
                                 verbose=False)
 
-        dpl_train, theta_train = get_sims(save_path)
+        dpl_train, theta_train = get_sims(data_save_path)
 
         x_train = pca.fit_transform(dpl_train)
 

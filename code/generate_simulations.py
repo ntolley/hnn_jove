@@ -75,8 +75,8 @@ if __name__ == "__main__":
 
     # Initialize the network model and run the batch simulation.
     # net_base = jones_2009_model()
-    # net_base = read_network_configuration('../data/opt_baseline_config_correlation_best.json')
-    net_base = read_network_configuration('../data/baseline_optimization/opt_baseline_config_correlation_17.json')# good choice but no spike change
+    net_base = read_network_configuration('../data/opt_baseline_config_correlation_best.json')
+    # net_base = read_network_configuration('../data/baseline_optimization/opt_baseline_config_correlation_10.json')# good choice but no spike change
     # net_base = read_network_configuration('../data/baseline_optimization/opt_baseline_config_correlation_11.json')# good choice but no spike change
     # net_base = read_network_configuration('../data/baseline_optimization/opt_baseline_config_correlation_14.json') # best match but way too much spiking
 
@@ -94,5 +94,6 @@ if __name__ == "__main__":
     _ = batch_simulation.run(theta_train_dict,
                             n_jobs=n_jobs,
                             combinations=False,
-                            backend='loky')
+                            backend='loky',
+                            verbose=False)
 
