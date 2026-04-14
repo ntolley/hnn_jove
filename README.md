@@ -19,4 +19,4 @@ pixi install
 These steps will create a `pixi.lock` file specific to your operating system containing a list of all python depenencies 
 
 ### Example notebooks
-Jupyter notebooks are provided  in `/notebooks` to reproduce the main data figures of Tolley et al. 2026 (link TBD). These notebooks depend on outputs of 2 computationally expensive python scripts found in the `/code`. Data generated for both of these scripts can be downloaded at (LINK TBD)
+Jupyter notebooks are provided  in `/notebooks` to reproduce the main data figures of Tolley et al. 2026 (link TBD). These notebooks depend on outputs of 2 computationally expensive python scripts found in the `/code`. Data generated for both of these scripts are available for download at the associated [Open Science Framework repository](https://osf.io/q4udw)
