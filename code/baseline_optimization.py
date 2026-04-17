@@ -6,7 +6,7 @@ from matplotlib.lines import Line2D
 
 import hnn_core
 from hnn_core import (MPIBackend, jones_2009_model, simulate_dipole,
-                      read_dipole, JoblibBackend)
+                      read_dipole, JoblibBackend, pick_connection)
 from hnn_core.dipole import average_dipoles
 from hnn_core.viz import plot_dipole
 
@@ -189,7 +189,9 @@ if __name__ == "__main__":
 
     # 3) Evalute and save optimization results
     # -----------------------------------------
-    job_id = int(sys.argv[1])
+    job_id = 0
+    if len(sys.argv) > 1:
+        job_id = int(sys.argv[1])
     fpath = "/users/ntolley/Jones_Lab/hnn_jove/data/baseline_optimization"
 
     # Save parameters of best fit network

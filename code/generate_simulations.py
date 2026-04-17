@@ -17,6 +17,10 @@ import torch
 import os
 from scipy.stats import norm
 
+# Set random seed for reproducibility
+seed = 123
+torch.manual_seed(seed)
+
 def set_params(param_values, net):
     """
     Set parameters for the network drives.
