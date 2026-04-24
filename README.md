@@ -29,6 +29,8 @@ This command will automatically open a tab in your default browser where you can
 Several steps in the protocol involve fitting simulations to empirical data. These files can be found in the `data/` folder and are titled `pre-treatment.txt` and `post-treatment.txt`.
 
 ### Python API examples
-Steps 5-7 of the protocol are reccomended to be completed using the Python interface to the HNN model.
+Jupyter notebooks are provided  in `notebooks/` to reproduce the main data figures of Tolley et al. 2026 (link TBD). These notebooks depend on outputs of 2 computationally expensive python scripts found in the `code/`. Specifically `code/baseline_optimization.py` runs parameter optimization to fit the model to the empirical ERP waveform `pre-treatment.txt` (Step 4-5 of the JoVE protocol). This repository is distributed with a parameter set that was output from this script in `data/opt_baseline_config_correlation_best.json`. The notebook files `notebooks/baseline_optimization_figure.ipynb` and `notebooks/posttreatment_optimization_figure.ipynb` both use these optimized files to generate the manuscript figures.
 
-Jupyter notebooks are provided  in `/notebooks` to reproduce the main data figures of Tolley et al. 2026 (link TBD). These notebooks depend on outputs of 2 computationally expensive python scripts found in the `/code`. Data generated for both of these scripts are available for download at the associated [Open Science Framework repository](https://osf.io/q4udw)
+Then `code/generate_simulations.py` uses the optized parameter set to generate a dataset of samples from a prior distribution over "post-treatment parameters of interest" (Step 6 of the JoVE protocol). Data generated from this script is available for download at the associated [Open Science Framework repository](https://osf.io/q4udw). The notebook `notebooks/drug_moa_sbi_ppc.ipynb` uses this dataset to 1) train an neural density estimator with the `sbi` package, and 2) produce a posterior distribution over the parameters of interest for the pre-treatment and hypothetical post-treatment ERP waveforms.
+
+
