@@ -1,3 +1,6 @@
+# Authors
+# Nicholas Tolley <nicholas_tolley@brown.edu>
+
 from hnn_core.optimization import Optimizer
 import os.path as op
 
@@ -135,8 +138,7 @@ def set_params_opt_drives(net, param_values):
                 )
                 assert len(conn_idx) == 1
 
-                # KD: I still think this isn't the user-friendliest way as this is pretty hidden.
-                # Will fix.
+              
                 net.connectivity[conn_idx[0]]["nc_dict"]["A_weight"] = (
                     10 ** param_values[f"{name}_{cell_type}_{receptor}"]
                 )
@@ -147,11 +149,14 @@ def set_params_opt_drives(net, param_values):
 
 
 if __name__ == "__main__":
+    """This script is associated with Step 4 of the JoVE protocol and optimizes parameters of
+    extrinsic drives with the default HNN model to produce an empirical
+    ERP waveform (i.e. the pre-treatment waveform.)"""
 
     # 1) Load ERP waveform from CSV file
     # ----------------------------------
     # 1st column must be time in ms, 2nd column must be neural signal (e.g. nAm or or mV)
-    dipole_experimental = read_dipole('/users/ntolley/Jones_Lab/hnn_jove/data/L_Contra.txt')
+    dipole_experimental = read_dipole('/users/ntolley/Jones_Lab/hnn_jove/data/pre-treatment.txt')
 
     # 2) Define optimization hyperparameters
     # --------------------------------------
