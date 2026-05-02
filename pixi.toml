@@ -14,4 +14,4 @@ seaborn = ">=0.13.2,<0.14"
 neurodsp = ">=2.3.0,<3"
 
 [pypi-dependencies]
-hnn-core = { git = "https://github.com/ntolley/hnn-core", rev = "bc1b975a01edf35d25621f282894335b84d70af9", extras=["dev"] }
+hnn-core = { git = "https://github.com/asoplata/hnn-core/", rev = "31819ef03c6880df9e0485d2033e26bc44fc4498", extras=["dev"] }
